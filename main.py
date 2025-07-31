@@ -25,7 +25,7 @@ def main() -> None:
                 name=player_dict["guild"]["name"],
                 description=player_dict["guild"]["description"]
             )
-            guild=guild
+            guild = guild
         player, created = Player.objects.get_or_create(
             nickname=nickname,
             email=player_dict["email"],
